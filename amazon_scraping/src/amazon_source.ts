@@ -33,9 +33,9 @@ const ordersPage = "https://www.amazon.in/your-orders";
                 const linkElement = itemBox.querySelector('a.a-link-normal');
 
                 return {
-                    title: titleElement ? titleElement.textContent.trim() : 'No Title',
+                    name : titleElement ? titleElement.textContent.trim() : 'No Title',
                     price: priceElement ? priceElement.textContent.trim() : 'No Price',
-                    link: linkElement ? linkElement.href : 'No Link',
+                    link_to_product: linkElement ? linkElement.href : 'No Link',
                 };
             });
         });
